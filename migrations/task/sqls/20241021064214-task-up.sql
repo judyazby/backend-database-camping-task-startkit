@@ -336,7 +336,7 @@ INNER JOIN "COURSE_BOOKING" cb on cp.user_id = cb.user_id
 WHERE cp.user_id = (SELECT id FROM "USER" WHERE name = '王小明')
 AND cb.cancelled_at IS NULL  -- 排除已取消的課程
 GROUP BY cp.user_id;
-/*
+
 -- ████████  █████   █     ███  
 --   █ █   ██    █  █     █     
 --   █ █████ ███ ███      ████  
@@ -396,4 +396,3 @@ SELECT
 FROM "COURSE_BOOKING"
 WHERE status != '課程已取消' 
 AND booking_at BETWEEN '2024-11-01 00:00:00' AND '2024-11-30 23:59:59';
-*/
