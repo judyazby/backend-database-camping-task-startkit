@@ -36,7 +36,7 @@ WHERE name = '透明人';
 SELECT COUNT(*) as 用戶數量 FROM "USER";
 -- 1-5 查詢：取得 USER 資料表所有用戶資料，並列出前 3 筆（提示：使用limit語法）
 SELECT * FROM "USER" LIMIT 3;
-/*
+
 --  ████████  █████   █    ████  
 --    █ █   ██    █  █         █ 
 --    █ █████ ███ ███       ███  
@@ -93,7 +93,7 @@ INSERT INTO "CREDIT_PURCHASE"(user_id, credit_package_id, purchased_credits, pri
 -- FROM "USER" u
 -- INNER JOIN "CREDIT_PACKAGE" p ON p.name = '14 堂組合包方案'
 -- WHERE u.name = '好野人';
-
+/*
 -- ████████  █████   █    ████   
 --   █ █   ██    █  █         ██ 
 --   █ █████ ███ ███       ███   
