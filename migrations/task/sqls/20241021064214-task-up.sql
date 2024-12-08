@@ -201,7 +201,7 @@ VALUES
     10,
     'https://test-meeting.test.io'
 );
-/*
+
 -- ████████  █████   █    █████ 
 --   █ █   ██    █  █     █     
 --   █ █████ ███ ███      ████  
@@ -336,7 +336,7 @@ INNER JOIN "COURSE_BOOKING" cb on cp.user_id = cb.user_id
 WHERE cp.user_id = (SELECT id FROM "USER" WHERE name = '王小明')
 AND cb.cancelled_at IS NULL  -- 排除已取消的課程
 GROUP BY cp.user_id;
-
+/*
 -- ████████  █████   █     ███  
 --   █ █   ██    █  █     █     
 --   █ █████ ███ ███      ████  
