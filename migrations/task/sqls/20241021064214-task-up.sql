@@ -36,7 +36,7 @@ WHERE name = '透明人';
 SELECT COUNT(*) as 用戶數量 FROM "USER";
 -- 1-5 查詢：取得 USER 資料表所有用戶資料，並列出前 3 筆（提示：使用limit語法）
 SELECT * FROM "USER" LIMIT 3;
-
+/*
 --  ████████  █████   █    ████  
 --    █ █   ██    █  █         █ 
 --    █ █████ ███ ███       ███  
@@ -391,8 +391,9 @@ WHERE purchase_at BETWEEN '2024-11-01 00:00:00' AND '2024-11-30 23:59:59';
 
 -- 6-5. 查詢：計算 11 月份有預約課程的會員人數（需使用 Distinct，並用 created_at 和 status 欄位統計）
 -- 顯示須包含以下欄位： 預約會員人數
--- SELECT
---     COUNT(DISTINCT user_id) AS 預約會員人數
--- FROM "COURSE_BOOKING"
--- WHERE status != '課程已取消' 
--- AND booking_at BETWEEN '2024-11-01 00:00:00' AND '2024-11-30 23:59:59';
+SELECT
+    COUNT(DISTINCT user_id) AS 預約會員人數
+FROM "COURSE_BOOKING"
+WHERE status != '課程已取消' 
+AND booking_at BETWEEN '2024-11-01 00:00:00' AND '2024-11-30 23:59:59';
+*/
