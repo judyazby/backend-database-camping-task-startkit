@@ -123,8 +123,8 @@ INSERT INTO "COACH"(user_id, experience_years) VALUES
     -- 3. 教練`Q太郎` 需要有 `有氧運動` 與 `復健訓練` 專長
 
 -- 先新增四種專長資料到"SKILL"
-INSERT INTO "SKILL" (name) VALUES 
-	('重訓'), ('瑜伽'), ('有氧運動'), ('復健訓練');
+-- INSERT INTO "SKILL" (name) VALUES 
+-- 	('重訓'), ('瑜伽'), ('有氧運動'), ('復健訓練');
 -- 為三名教練新增專長資料至 `COACH_LINK_SKILL`。由於初始值不可為NULL，先都新增'重訓'專長。
 INSERT INTO "COACH_LINK_SKILL"(coach_id, skill_id)
 SELECT c.id, s.id
