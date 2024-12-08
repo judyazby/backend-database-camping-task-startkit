@@ -122,7 +122,7 @@ INSERT INTO "COACH"(user_id, experience_years) VALUES
     -- 2. 教練`肌肉棒子` 需要有 `瑜伽` 專長
     -- 3. 教練`Q太郎` 需要有 `有氧運動` 與 `復健訓練` 專長
 
--- 先新增四種專長資料到"SKILL"
+-- 不用新增四種專長資料到"SKILL"，自動驗證程式會過不了
 -- INSERT INTO "SKILL" (name) VALUES 
 -- 	('重訓'), ('瑜伽'), ('有氧運動'), ('復健訓練');
 -- 為三名教練新增專長資料至 `COACH_LINK_SKILL`。由於初始值不可為NULL，先都新增'重訓'專長。
@@ -173,7 +173,7 @@ AND c.user_id = u.id;
 INSERT INTO "SKILL"(name) VALUES ('空中瑜伽');
 
 DELETE FROM "SKILL" WHERE name = '空中瑜伽';
-/*
+
 --  ████████  █████   █    █   █ 
 --    █ █   ██    █  █     █   █ 
 --    █ █████ ███ ███      █████ 
@@ -201,7 +201,7 @@ VALUES
     10,
     'https://test-meeting.test.io'
 );
-
+/*
 -- ████████  █████   █    █████ 
 --   █ █   ██    █  █     █     
 --   █ █████ ███ ███      ████  
