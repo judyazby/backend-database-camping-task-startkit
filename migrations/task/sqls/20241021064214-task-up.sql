@@ -93,7 +93,7 @@ INSERT INTO "CREDIT_PURCHASE"(user_id, credit_package_id, purchased_credits, pri
 -- FROM "USER" u
 -- INNER JOIN "CREDIT_PACKAGE" p ON p.name = '14 堂組合包方案'
 -- WHERE u.name = '好野人';
-/*
+
 -- ████████  █████   █    ████   
 --   █ █   ██    █  █         ██ 
 --   █ █████ ███ ███       ███   
@@ -173,7 +173,7 @@ AND c.user_id = u.id;
 INSERT INTO "SKILL"(name) VALUES ('空中瑜伽');
 
 DELETE FROM "SKILL" WHERE name = '空中瑜伽';
-
+/*
 --  ████████  █████   █    █   █ 
 --    █ █   ██    █  █     █   █ 
 --    █ █████ ███ ███      █████ 
